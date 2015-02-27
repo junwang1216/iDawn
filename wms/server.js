@@ -1,7 +1,7 @@
 #!/usr/bin/env node
+
 var app = require('./app'),
     config = require('./config');
-
 
 app.set('port', process.env.PORT || config.app.port);
 

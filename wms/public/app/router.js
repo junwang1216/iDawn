@@ -15,8 +15,12 @@
                 templateUrl : 'pages/home/home-index.html',
                 controller  : 'homeController'
             })
-            .when('/users', {
-                templateUrl : 'pages/users.html',
+            .when('/users-list', {
+                templateUrl : 'pages/users/users-list.html',
+                controller  : 'usersController'
+            })
+            .when('/users-edit', {
+                templateUrl : 'pages/users/users-edit.html',
                 controller  : 'usersController'
             })
             .when('/report', {
