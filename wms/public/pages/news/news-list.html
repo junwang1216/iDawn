@@ -1,0 +1,27 @@
+<!-- news-list.html -->
+
+<div class="route-bg">
+    <a href="#home">首页</a> >> <a href="#news">企业信息</a> >> 企业新闻
+</div>
+<div class="main-content">
+    <div id="page-content">
+        <div>
+            <h3>企业新闻列表</h3>
+
+            <div class="info-list">
+                <div class="info-list-item" ng-repeat="item in newsList">
+                    <div class="info-list-con">
+                        <h4>{{item.title}}</h4>
+                        <p class="text-info">最近更新：{{item.updateDate}} | 发布人：{{item.author}}</p>
+                        <p>{{item.brief}}</p>
+                    </div>
+                    <div class="info-list-op">
+                        <p><button type="button" info="{{item.id}}" class="btn btn-default" ng-click="view($event.target)">查看</button></p>
+                        <p><button type="button" info="{{item.id}}" class="btn btn-danger" ng-click="delete($event.target)">删除</button></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+<!-- news.html -->
+
+<div class="route-bg">
+    <a href="#home">首页</a> >> <a href="#news">企业信息</a> >> <a href="#news-list">企业新闻</a> >> 详情编辑
+</div>
+<div class="main-content">
+    <div id="page-content">
+        <div>
+            <div class="info-detail-edit">
+                <form method="post">
+                    <div class="form-group">
+                        <label for="newsTitle">新闻标题</label>
+                        <input type="text" class="form-control" id="newsTitle" placeholder="输入新闻标题">
+                    </div>
+                    <div class="form-group">
+                        <label>新闻内容</label>
+                        <textarea class="ckeditor" name="editor1"></textarea>
+                    </div>
+                    <p>
+                        <button type="button" class="btn btn-info" ng-click="confirm($event.target)">确定</button>
+                        <button type="button" class="btn btn-danger" ng-click="cancel($event.target)">取消</button>
+                    </p>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>

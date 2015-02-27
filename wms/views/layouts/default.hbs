@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="bkmApp">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>{{title}}__后台管理</title>
+
+    <meta name="author" content="{{author}}" />
+    <meta name="keywords" content="{{keywords}}" />
+    <meta name="description" content="{{description}}" />
+
+    <link media="screen" rel="stylesheet" href="/lib/css/bootstrap.min.css" />
+    <link media="screen" rel="stylesheet" href="/lib/css/angular-chart.css" />
+    <link media="screen" rel="stylesheet" href="/lib/css/index.css" />
+
+    <script src="/lib/js/chart/Chart.js"></script>
+    <script src="/lib/js/ckeditor/ckeditor.js"></script>
+
+    <script src="/lib/js/angular/angular.min.js"></script>
+    <script src="/lib/js/angular/angular-route.js"></script>
+    <script src="/lib/js/angular/angular-chart.js"></script>
+
+    <script src="/app/app.js"></script>
+
+    <script src="/app/controllers/report-controller.js"></script>
+    <script src="/app/controllers/news-controller.js"></script>
+
+    <script src="/app/router.js"></script>
+</head>
+
+<body ng-controller="homeController">
+
+    {{> header}}
+
+    {{> menu}}
+
+    <!--内容-->
+    <div id="layout-right-content" class="layout-right-content">
+        <div ng-view>{{{body}}}</div>
+    </div>
+    <!--内容结束-->
+
+    {{> footer}}
+</body>
+</html>

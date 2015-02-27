@@ -1,0 +1,28 @@
+<!-- news-list.html -->
+
+<div class="route-bg">
+    <a href="#home">首页</a> >> <a href="#news">企业信息</a> >> <a href="#news-list">企业新闻</a> >> 新闻详情
+</div>
+<div class="main-content">
+    <div id="page-content">
+        <div>
+            <div class="info-detail">
+                <div class="info-detail-title">
+                    <h3>{{news.title}}</h3>
+                    <p class="text-info">最近更新：{{news.updateDate}} | 发布人：{{news.author}}</p>
+                </div>
+                <div class="info-detail-op">
+                    <p><button type="button" info="{{news.id}}" class="btn btn-info" ng-click="edit($event.target)">编辑</button></p>
+                </div>
+                <div class="info-detail-con">
+                    <p>前端工程师，也叫Web前端开发工程师。他是随着web发展，细分出来的行业。Web前端开发技术主要包括三个要素：HTML、CSS和JavaScript！它要求前端开发工程师不仅要掌握基本的Web前端开发技术，网站性能优化、SEO和服务器端的基础知识，而且要学会运用各种工具进行辅助开发以及理论层面的知识，包括代码的可维护性、组件的易用性、分层语义模板和浏览器分级支持等。</p>
+                    <p>随着近两三年来RIA（Rich Internet Applications的缩写，中文含义为：丰富的因特网应用程序）的流行和普及带来的诸如：Flash/Flex，Silverlight、XML和服务器端语言（PHP、ASP.NET，JSP、Python）等语言，前端开发工程师也需要掌握。前端开发的入门门槛其实很低，与服务器端语言先慢后快的学习曲线相比，前端开发的学习曲线是先快后慢。</p>
+                    <p>HTML 甚至不是一门语言，他仅仅是简单的标记语言！CSS 只是无类型的样式修饰语言。当然可以勉强算作弱类型语言。</p>
+                    <p>Javascript 的基础部分相对来说不难，入手还算快。</p>
+                    <p>也正因为如此，前端开发领域有很多自学成“才”的同行，但大多数人都停留在会用的阶段，因为后面的学习曲线越来越陡峭，每前进一步都很难。Web前端技术有一些江湖气，知识点过于琐碎，技术价值观的博弈也难分伯仲，即全局的系统的知识结构并未成体系，这些因素也客观上影响了“正统“前端技术的沉淀！而且各种“奇技淫巧”被滥用，前端技术知识的传承也过于泛泛，新人难看清时局把握主次。因此，前端技术领域，为自己觅得一个靠谱的师兄，重要性要盖过项目、团队、公司、甚至薪水。注：div标签不要忘记起始符。text-indent只对p或div标签有效，对br标签不生效，原因是br标签是换行标签不是分段标签。用CSS实现段落首缩进两个字符，实现首行缩进的通用方法是加四个小角空格。在style里定义如下缩进样式：.suojin{text-indent:2em}在需要缩进的地方使用class="suojin"即可，比如用一个div定义一整块段落首先缩进，凡在div区域里，浏览器一碰上p语句（即一个新段的开始），就会执行.suojin所定义的缩进。也可以在正文中使用嵌入式CSS样式来定义，下面举个实例（使用时请将尖括号改为小角尖括号）：</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
