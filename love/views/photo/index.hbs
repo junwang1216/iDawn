@@ -1,0 +1,20 @@
+{{!< default}}
+
+<article id="id-container">
+    <div class="cls-container-top">
+        <div class="cls-container-bottom">
+            <div class="cls-container-content cls-family-photographers">
+                <ul>
+                    {{#each albums}}
+                    <li>
+                        <a href="/photo/{{id}}"><img src="/image/{{id}}/{{cover}}" alt="封面"></a>
+                        <p>
+                            <span>{{title}}</span> {{note}} <span class="cls-family-photodate">{{date}}</span>
+                        </p>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </div>
+</article>

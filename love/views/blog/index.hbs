@@ -1,0 +1,37 @@
+{{!< default}}
+
+<article id="id-container">
+    <div class="cls-container-top">
+        <div class="cls-container-bottom">
+            <div class="cls-container-content">
+                <div class="cls-family-blog">
+                    <div>{{{current.content}}}</div>
+                </div>
+                <div class="cls-family-bloglist">
+                    <h4>博文推荐</h4>
+                    <div>
+                        <ul>
+                            {{#each blogs}}
+                            <li>
+                                <a href="/blog/{{id}}">{{title}}</a>
+                            </li>
+                            {{/each}}
+                        </ul>
+                    </div>
+                </div>
+                <div class="cls-family-bloglist">
+                    <h4>全部博文</h4>
+                    <div>
+                        <ul>
+                            {{#each blogs}}
+                            <li>
+                                <a href="/blog/{{id}}">{{title}}</a>
+                            </li>
+                            {{/each}}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>

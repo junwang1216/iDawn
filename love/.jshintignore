@@ -1,0 +1,14 @@
+db
+docs
+install
+node_modules
+.git
+.gitinore
+.jshintigore
+.jshintrc
+.project
+jake
+LICENSE
+README.md
+public/common
+public/management

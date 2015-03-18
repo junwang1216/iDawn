@@ -1,0 +1,10 @@
+/node_modules
+/content
+/core
+/config.example.js
+/index.js
+/Gruntfile.js
+/.project
+/docs
+/install
+/jake

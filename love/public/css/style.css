@@ -1,0 +1,564 @@
+@font-face {
+    font-family: 'PlayballRegular';
+    src: url('../fonts/playball-regular-webfont.eot');
+    src: url('../fonts/playball-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/playball-regular-webfont.woff') format('woff'),
+         url('../fonts/playball-regular-webfont.ttf') format('truetype'),
+         url('../fonts/playball-regular-webfont.svg#PlayballRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: url(../images/bg-body.jpg) repeat center top;
+    color: #2B0D05;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    min-width: 960px;
+    padding: 0;
+}
+a {
+    outline: none;
+}
+img {
+    border: 0;
+}
+p {
+    line-height: 24px;
+    text-align: justify;
+}
+p a {
+    text-decoration: underline;
+}
+
+/*header*/
+#id-header {
+    width: 100%;
+}
+#id-header div{
+    margin: 0 auto;
+    overflow: hidden;
+    width: 960px;
+}
+#id-header div img {
+    float: left;
+    padding: 20px 0 15px;
+}
+#id-header div .cls-family-nav {
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 22px 0 0;
+}
+#id-header div .cls-family-nav li {
+    float: left;
+}
+#id-header div .cls-family-nav li a {
+    color: #2B0D05;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    height: 46px;
+    line-height: 75px;
+    padding: 0 15px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#id-header div .cls-family-nav li.current a,
+#id-header div .cls-family-nav li a:hover {
+    background: url(../images/bg-menu-selected.png) no-repeat center top;
+}
+#id-header .cls-family-figure {
+    background: url(../images/frame1.png) no-repeat center top;
+    height: 421px;
+    margin: 0;
+    position: relative;
+    width:auto;
+}
+#id-header .cls-family-figure img {
+    float: none;
+    padding: 0;
+}
+#id-header .cls-family-figure div {
+    margin: 27px auto 0;
+    width: 909px;
+}
+
+/*main*/
+#id-main {
+    margin: 35px 0 0;
+}
+#id-main p a {
+    color: #2B0D05;
+}
+#id-main h2 {
+    background: url(../images/bg-menu.png) no-repeat 0 -140px;
+    color: #ded3cd;
+    font-family: 'PlayballRegular';
+    font-size: 40px;
+    font-weight: normal;
+    height: 61px;
+    line-height: 61px;
+    text-align: center;
+    width: 231px;
+}
+#id-main div {
+    background: url(../images/separator.png) no-repeat center 20px;
+    margin: 0 auto 35px;
+    width: 960px;
+}
+#id-main div div {
+    background: url(../images/separator.png) no-repeat center bottom;
+}
+#id-main div div div {
+    background: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0 0 10px;
+}
+/*motto*/
+#id-main .cls-family-motto {
+    border: none;
+    background: none;
+    float: left;
+    height: auto;
+    width: 525px;
+}
+#id-main .cls-family-motto h2 {
+    margin: 0 0 25px 80px;
+}
+#id-main .cls-family-motto p {
+    margin: 0 15px;
+    padding-top: 15px;
+    text-indent: 30px;
+}
+#id-main .cls-family-motto .cls-family-content {
+    background: url(../images/frame2.png) no-repeat center top;
+    float: none;
+    height: 360px;
+    margin: 30px 0 0;
+    width: 400px;
+    color: #DED3CD;
+}
+#id-main .cls-family-share {
+    background: none;
+    float: none;
+    height: auto;
+    line-height: 21px;
+    margin: 10px 0 0;
+    width: auto;
+}
+#id-main .cls-family-share a {
+    display: inline-block;
+    height: 18px;
+    margin: 0 5px;
+    text-indent: -99999px;
+}
+#id-main .cls-family-share .twitter {
+    background: url(../images/icon.png) no-repeat 0 -92px;
+    width: 24px;
+}
+#id-main .cls-family-share .facebook {
+    background: url(../images/icon.png) no-repeat 0 -63px;
+    width: 19px;
+}
+/*latest*/
+#id-main .cls-family-latest {
+    background: none;
+    float: right;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    width: 400px;
+}
+#id-main .cls-family-latest div {
+    background: url(../images/frame2.png) no-repeat center top;
+    float: none;
+    height: 360px;
+    margin: 30px 0 0;
+    width: 400px;
+}
+#id-main .cls-family-latest ul {
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0 20px;
+}
+#id-main .cls-family-latest ul li {
+    float: left;
+    padding: 10px 10px 8px;
+    width: 70px;
+}
+#id-main .cls-family-latest h2 {
+    margin: 0 auto 25px;
+}
+#id-main .cls-family-latest h3 {
+    color: #DED3CD;
+    font-family: 'PlayballRegular';
+    font-size: 30px;
+    font-weight: normal;
+    margin: 15px 0 0;
+    text-align: center;
+}
+#id-main .cls-family-latest img {
+    width: 70px;
+    height: 70px;
+    border: 3px solid #b99058;
+    transition: transform 0.3s ease 0s;
+}
+#id-main .cls-family-latest img:hover {
+    transform: scale(1.05);
+}
+
+/*container*/
+#id-container {
+    /*background:url(../images/bg-body2.gif) repeat center;*/
+    color: #EFE3D3;
+    margin: -210px 0 0;
+    padding: 235px 0 30px;
+}
+#id-container h2 {
+    background: url(../images/bg-menu.png) no-repeat left -140px;
+    font-family: 'PlayballRegular';
+    font-size: 40px;
+    font-weight: normal;
+    height: 61px;
+    line-height: 61px;
+    margin: 0 auto 30px;
+    text-indent: 50px;
+    width: 960px;
+}
+#id-container p a {
+    color: #EFE3D3;
+}
+#id-container .cls-container-top {
+    background: url(../images/bg-content-top.png) no-repeat center top;
+    margin: 0 auto;
+    padding: 24px 0 0;
+    width: 960px;
+}
+#id-container .cls-container-bottom {
+    background: url(../images/bg-content-bottom.png) no-repeat center bottom;
+    padding: 0 0 25px;
+    width: auto;
+}
+#id-container .cls-container-content {
+    background: url(../images/bg-content.png) repeat-y center top;
+    overflow: hidden;
+    padding: 0 30px 0;
+    width: auto;
+}
+/*gallery*/
+#id-container .cls-family-gallery {
+    padding: 0 15px 0;
+}
+#id-container .cls-family-gallery ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#id-container .cls-family-gallery ul li {
+    float: left;
+    margin: 10px 13px;
+}
+#id-container .cls-family-gallery ul li img {
+    border: 3px solid #B99058;
+    height: 154px;
+    transition: transform 0.3s ease 0s;
+}
+#id-container .cls-family-gallery ul li img:hover {
+    transform: scale(1.05);
+}
+/*
+#id-container .cls-family-show {
+    display: none;
+}
+#id-container .cls-family-show img {
+    border: 3px solid #B99058;
+    width: 895px;
+}
+#id-container .cls-family-show .cls-family-photo {
+    background: none;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    float: none;
+    padding: 0;
+}
+#id-container .cls-family-show .cls-family-text {
+    background: #CDCDCD;
+    color: #111111;
+    padding: 1em;
+}
+#id-container .cls-family-show .cls-family-paging {
+    background: none;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    float: none;
+    padding: 0;
+    width: auto;
+}
+#id-container .cls-family-show .cls-family-paging a {
+    color: #EDE1D1;
+    display: block;
+    height: 22px;
+    line-height: 20px;
+    text-decoration: none;
+}
+#id-container .cls-family-show .cls-family-paging a:hover {
+    color: #BC955C;
+}
+#id-container .cls-family-show .cls-family-paging a.prev-paging {
+    background: url(../images/icon.png) no-repeat left -32px;
+    float: left;
+    text-indent: 25px;
+}
+#id-container .cls-family-show .cls-family-paging a.next-paging {
+    background: url(../images/icon.png) no-repeat right 0;
+    float: right;
+    padding: 0 30px 0 0;
+}*/
+/*photographers*/
+#id-container .cls-family-photographers {
+    padding: 0 15px 0;
+}
+#id-container .cls-family-photographers span {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    color: #DAA061;
+}
+#id-container .cls-family-photographers ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#id-container .cls-family-photographers ul li {
+    float: left;
+    height: 140px;
+    margin: 10px 15px;
+    width: 432px;
+}
+#id-container .cls-family-photographers ul li p {
+    float: right;
+    margin: 0 0 20px;
+    position: relative;
+    width: 265px;
+}
+#id-container .cls-family-photographers ul li img {
+    float: left;
+    border: 3px solid #b99058;
+    width: 135px;
+    height: 135px;
+}
+/*blog*/
+#id-container .cls-family-blog {
+    background: none;
+    float: left;
+    padding: 0;
+    width: 555px;
+}
+#id-container .cls-family-blog h2 {
+    background: none;
+    color: #DAA061;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    height: auto;
+    line-height: 25px;
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+#id-container .cls-family-blog p {
+    text-indent: 2em;
+}
+#id-container .cls-family-bloglist {
+    background: none;
+    float: right;
+    padding: 3px 0 0;
+    width: 330px;
+    margin-bottom: 15px;
+}
+#id-container .cls-family-bloglist h4 {
+    background: url(../images/bg-sidebar-title.png) no-repeat center top;
+    color: #DAA061;
+    font-family: 'PlayballRegular';
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 42px;
+    margin: 0;
+    text-align: center;
+}
+#id-container .cls-family-bloglist div {
+    background: url(../images/bg-sidebar-bottom.png) no-repeat center bottom;
+    float: none;
+    padding: 0 0 21px;
+    width: auto;
+}
+#id-container .cls-family-bloglist ul {
+    border-left: 4px solid #C89E62;
+    border-right: 4px solid #C89E62;
+    list-style: none;
+    margin: 0;
+    padding: 0 20px;
+}
+#id-container .cls-family-bloglist ul li {
+    display: block;
+    float: none;
+    margin: 0;
+}
+#id-container .cls-family-bloglist ul li a {
+    background: url(../images/bullet.png) no-repeat left center;
+    color: #DAA061;
+    display: inline-block;
+    line-height: 24px;
+    text-align: justify;
+    text-decoration: none;
+    text-indent: 15px;
+}
+#id-container .cls-family-bloglist ul li a:hover {
+    color: #EFE3D3;
+}
+#id-container .cls-family-comments {
+    background: none;
+    float: right;
+    padding: 3px 0 0;
+    width: 330px;
+}
+#id-container .cls-family-comments h4 {
+    background: url(../images/bg-sidebar-title.png) no-repeat center top;
+    color: #DAA061;
+    font-family: 'PlayballRegular';
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 42px;
+    margin: 0;
+    text-align: center;
+}
+#id-container .cls-family-comments div {
+    background: url(../images/bg-sidebar-bottom.png) no-repeat center bottom;
+    float: none;
+    padding: 0 0 21px;
+    width: auto;
+}
+#id-container .cls-family-comments ul {
+    border-left: 4px solid #C89E62;
+    border-right: 4px solid #C89E62;
+    list-style: none;
+    margin: 0;
+    padding: 0 20px;
+}
+#id-container .cls-family-comments ul li {
+    display: block;
+    float: none;
+    margin: 0;
+}
+#id-container .cls-family-comments ul li a {
+    background: url(../images/bullet.png) no-repeat left center;
+    color: #DAA061;
+    display: inline-block;
+    line-height: 24px;
+    text-align: justify;
+    text-decoration: none;
+    text-indent: 15px;
+}
+#id-container .cls-family-comments ul li a:hover {
+    color: #EFE3D3;
+}
+
+/*footer*/
+#id-footer{
+    margin-top: -45px;
+    overflow: hidden;
+}
+#id-footer p {
+    text-align: center;
+    text-transform: lowercase;
+}
+
+
+
+.rslides_container {
+    margin-bottom: 50px;
+    position: relative;
+    float: left;
+    width: 100%;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    margin: 0 auto;
+}
+
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.rslides li {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.rslides img {
+    display: block;
+    position: relative;
+    z-index: 1;
+    height: auto;
+    width: 100%;
+    border: 0;
+}
+
+.rslides .caption {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    font-size: 20px;
+    text-shadow: none;
+    color: #fff;
+    background: #000;
+    background: rgba(0,0,0, .8);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px 20px;
+    margin: 0;
+    max-width: none;
+}
+
+.rslides_nav {
+    position: absolute;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    top: 52%;
+    left: 0;
+    opacity: 0.7;
+    z-index: 3;
+    text-indent: -9999px;
+    overflow: hidden;
+    text-decoration: none;
+    height: 61px;
+    width: 38px;
+    background: transparent url("/common/three/responsiveslides/themes/themes.gif") no-repeat left top;
+    margin-top: -45px;
+}
+
+.rslides_nav:active {
+    opacity: 1.0;
+}
+
+.rslides_nav.next {
+    left: auto;
+    background-position: right top;
+    right: 0;
+}
