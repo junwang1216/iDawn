@@ -6,7 +6,8 @@ var fs = require('fs'),
     Gallery,
     _data = {
         isReady: false,
-        albums: []
+        albums: [],
+        albumsInfo: {}
     };
 
 function _init () {
@@ -29,6 +30,7 @@ function _init () {
             album.id = name;
 
             _data.albums.push(album);
+            _data.albumsInfo[name] = album;
             album = null;
 
             albumPath = path.join(dbPath, name);
@@ -81,7 +83,7 @@ Gallery = {
             return;
         }
 
-        callback(_data[opts.album]);
+        callback(_data[opts.album], _data.albumsInfo[opts.album]);
     },
     sendPhoto: function (opts, callback) {
         "use strict";

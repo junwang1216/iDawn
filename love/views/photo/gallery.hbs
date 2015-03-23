@@ -1,7 +1,29 @@
 {{!< default}}
 
 <article id="id-container">
-    <h2>照片</h2>
+    <div class="cls-family-show">
+        <div class="cls-family-field">
+            <div class="rslides_container">
+                <ul class="rslides" id="id-family-slider">
+                    {{#each photos}}
+                    <li data-index={{index}}>
+                        <img src="/image/{{album}}/{{photo}}" alt="{{photo}}">
+                        <!--<p class="caption">{{photo}}</p>-->
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+        <div class="cls-family-close"></div>
+    </div>
+    <div class="cls-container-top">
+        <div class="cls-container-bottom">
+            <div class="cls-container-content">
+                【{{album.title}}】{{album.note}}
+            </div>
+        </div>
+    </div>
+    <div>&nbsp;</div>
     <div class="cls-container-top">
         <div class="cls-container-bottom">
             <div class="cls-container-content cls-family-gallery">
@@ -14,27 +36,9 @@
                     {{/each}}
                 </ul>
             </div>
-            <!--
-            <div class="cls-container-content cls-family-show">
-                <div class="rslides_container">
-                    <ul class="rslides" id="id-family-slider">
-                        {{#each photos}}
-                        <li>
-                            <img src="/image/{{album}}/{{photo}}" alt="{{photo}}">
-                            <p class="caption">{{photo}}</p>
-                        </li>
-                        {{/each}}
-                    </ul>
-                </div>
-            </div>
-            -->
         </div>
     </div>
 </article>
 
+<script src="/js/gallery.js"></script>
 
-<script>
-    $(function () {
-        $("#id-family-slider").responsiveSlides({ auto: false, nav: true, speed: 500 });
-    });
-</script>

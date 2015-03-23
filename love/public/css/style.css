@@ -53,6 +53,7 @@ p a {
 }
 #id-header div .cls-family-nav li {
     float: left;
+    margin-left: 20px;
 }
 #id-header div .cls-family-nav li a {
     color: #2B0D05;
@@ -127,6 +128,14 @@ p a {
 }
 #id-main .cls-family-motto h2 {
     margin: 0 0 25px 80px;
+}
+#id-main .cls-family-motto h3 {
+    color: #DED3CD;
+    font-family: 'PlayballRegular';
+    font-size: 30px;
+    font-weight: normal;
+    margin: 15px 0 0;
+    text-align: center;
 }
 #id-main .cls-family-motto p {
     margin: 0 15px;
@@ -271,56 +280,32 @@ p a {
 #id-container .cls-family-gallery ul li img:hover {
     transform: scale(1.05);
 }
-/*
+
 #id-container .cls-family-show {
-    display: none;
+    position: absolute;
+    max-width: 850px;
+    min-width: 600px;
+    border: 3px solid #000000;
+    border-radius: 10px;
+    padding: 10px;
+    background: #000000;
+    left: 100px;
+    top: 700px;
 }
-#id-container .cls-family-show img {
-    border: 3px solid #B99058;
-    width: 895px;
+
+#id-container .cls-family-show .cls-family-close {
+    background: url("../images/close.png") no-repeat scroll 0 0 / 48px 48px #DDD;
+    border-radius: 24px;
+    cursor: pointer;
+    height: 48px;
+    opacity: 1;
+    position: absolute;
+    right: -24px;
+    top: -24px;
+    width: 48px;
+    z-index: 10;
 }
-#id-container .cls-family-show .cls-family-photo {
-    background: none;
-    height: auto;
-    margin: 0 auto;
-    overflow: hidden;
-    float: none;
-    padding: 0;
-}
-#id-container .cls-family-show .cls-family-text {
-    background: #CDCDCD;
-    color: #111111;
-    padding: 1em;
-}
-#id-container .cls-family-show .cls-family-paging {
-    background: none;
-    height: auto;
-    margin: 0 auto;
-    overflow: hidden;
-    float: none;
-    padding: 0;
-    width: auto;
-}
-#id-container .cls-family-show .cls-family-paging a {
-    color: #EDE1D1;
-    display: block;
-    height: 22px;
-    line-height: 20px;
-    text-decoration: none;
-}
-#id-container .cls-family-show .cls-family-paging a:hover {
-    color: #BC955C;
-}
-#id-container .cls-family-show .cls-family-paging a.prev-paging {
-    background: url(../images/icon.png) no-repeat left -32px;
-    float: left;
-    text-indent: 25px;
-}
-#id-container .cls-family-show .cls-family-paging a.next-paging {
-    background: url(../images/icon.png) no-repeat right 0;
-    float: right;
-    padding: 0 30px 0 0;
-}*/
+
 /*photographers*/
 #id-container .cls-family-photographers {
     padding: 0 15px 0;
@@ -374,6 +359,7 @@ p a {
     margin: 0;
     padding: 0;
     width: auto;
+    text-align: center;
 }
 #id-container .cls-family-blog p {
     text-indent: 2em;
@@ -482,8 +468,6 @@ p a {
     text-transform: lowercase;
 }
 
-
-
 .rslides_container {
     margin-bottom: 50px;
     position: relative;
@@ -549,7 +533,7 @@ p a {
     text-decoration: none;
     height: 61px;
     width: 38px;
-    background: transparent url("/common/three/responsiveslides/themes/themes.gif") no-repeat left top;
+    background: transparent url("../images/themes.gif") no-repeat left top;
     margin-top: -45px;
 }
 

@@ -16,7 +16,7 @@ var gallery = require("../models/gallery"),
 exports.showPhoto = function (req, res) {
     "use strict";
     var options = {
-        root: config.family.gallery.content,
+        root: config.photo.content,
         album: req.params.album,
         photo: req.params.photo
     };

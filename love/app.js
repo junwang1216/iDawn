@@ -41,6 +41,7 @@ app.use('/', controllers.home);
 app.use('/home', controllers.home);
 app.use('/photo', controllers.photo);
 app.use('/blog', controllers.blog);
+app.use('/contact', controllers.contact);
 app.use('/image', controllers.image);
 
 module.exports = app;

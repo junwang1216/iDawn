@@ -9,7 +9,7 @@ function _formatImagePath(rootPath, fileName) {
 
 exports.getImagePath = function (opts, callback) {
     "use strict";
-    var contentType = config.family.contentType,
+    var contentType = config.image.contentType,
         fileName = opts.photo,
         fileFolder = opts.album,
         rootPath = opts.root,

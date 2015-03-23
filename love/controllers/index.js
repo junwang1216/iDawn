@@ -19,6 +19,12 @@ var router_blog = express.Router(),
 
 router_blog.get('/:blog?', blog_controller.index);
 
+//博文路由
+var router_contact = express.Router(),
+    contact_controller = require('./contact');
+
+router_contact.get('/', contact_controller.index);
+
 //图片路由
 var router_image = express.Router(),
     image_controller = require('./image');
@@ -29,4 +35,5 @@ router_image.get('/:album?/:photo?', image_controller.showPhoto);
 exports.home = router_home;
 exports.photo = router_photo;
 exports.blog = router_blog;
+exports.contact = router_contact;
 exports.image = router_image;

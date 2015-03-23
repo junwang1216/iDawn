@@ -29,7 +29,7 @@ Motto = {
             return;
         }
 
-        callback(_data.motto[0].content);
+        callback(_data.motto[0]);
     }
 };
 

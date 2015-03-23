@@ -30,7 +30,7 @@ function _init() {
                 _data.newest = name;
             }
 
-            if (_data.articles[blog.class]) {
+            if (!_data.articles[blog.class]) {
                 _data.articles[blog.class] = [];
             }
             _data.articles[blog.class].push(blog);

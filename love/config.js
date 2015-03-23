@@ -21,7 +21,21 @@ module.exports = {
     },
     photo: {
         index   : path.join(__dirname, "db/photo.json"),
-        content : path.join(__dirname, "db/photos/")
+        content : path.join(__dirname, "db/photos/"),
+        contentType : {
+            'jpg'   : 'image/jpeg',
+            'jpeg'  : 'image/jpeg',
+            'gif'   : 'image/gif',
+            'png'   : 'image/png'
+        }
+    },
+    image: {
+        contentType : {
+            'jpg'   : 'image/jpeg',
+            'jpeg'  : 'image/jpeg',
+            'gif'   : 'image/gif',
+            'png'   : 'image/png'
+        }
     },
     debug: {
         on      : true,

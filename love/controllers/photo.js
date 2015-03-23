@@ -34,8 +34,9 @@ exports.getPhotoByAlbum = function(req, res) {
         album: req.params.album
     };
 
-    gallery.getAlbumPhotos(options, function (items) {
+    gallery.getAlbumPhotos(options, function (items, album) {
         res.render('photo/gallery', {
+            album: album,
             photos: items,
             page: "photo"
         });

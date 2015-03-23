@@ -19,9 +19,9 @@ hbs.registerHelper('motto_show', function(items) {
         throw new Error("hbs Helper 'cur_nav_item' needs 1 parameters");
     }
 
-    var str = '';
-    for (var i = 0; i < items.length; i++) {
-        str += '<p>' + items[i] + '</p>'
+    var str = '<h3>' + items.title + '</h3>';
+    for (var i = 0; i < items.content.length; i++) {
+        str += '<p>' + items.content[i] + '</p>'
     }
 
     return new hbs.SafeString(str);
